@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mi</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Comentarios</title>
 </head>
 
-<body>
+<body class="grid-container">
+
     <header class="header">
 
         <div class="logo">
@@ -40,55 +41,29 @@
         </nav>
 
     </header>
+    <section class="comments-section">
+        <div class="uno">
+            <div class="titulo-comentarios7">
+                <h2>Dejanos tus comentarios</h2>
+            </div>
+            <div class="contenedor-formulario">
+                <form id="comment-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
 
-    <!--parrafo principal-->
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
 
-    <main class="main2">
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment" rows="6" cols="30" required></textarea>
 
-        <div class="parrafo3">
-            <p data-aos="zoom-out">
-                Un fotógrafo especializado en la captura de imágenes en blanco y negro es un artista con una
-                sensibilidad
-                única para la luz, la sombra y los contrastes. Este tipo de fotógrafo generalmente tiene una comprensión
-                profunda de la estética atemporal y la emotividad que puede lograrse a través de la simplicidad y la
-                ausencia de color...
-            </p>
+                    <button type="submit">Enviar Comentario</button>
+                </form>
+
+               
+            </div>
         </div>
-
-
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--footer-->
-
+    </section>
     <footer class="pie">
 
         <div class="derechos">
@@ -105,11 +80,14 @@
 
     </footer>
 
+    <script src="script.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+
+
+
+
+
+
 
 
 </body>

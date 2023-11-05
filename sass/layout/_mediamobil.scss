@@ -1,22 +1,33 @@
 @media (max-width: 450px) {
 
     .header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+       
 
         .logo {
+            
+
 
             img {
-                width: 6rem;
+                display: none;
+                
+
             }
         }
 
         .navegable {
             ul {
-
+               
+                flex-direction: row;
                 width: 100%;
                 margin-top: 1px;
 
                 li {
-                    font-size: 12px;
+                    
+
+                    font-size: 14px;
                 }
 
 
@@ -108,24 +119,26 @@
 
 
 
-.main2 {
-    width: auto;
-    
-    
-}
-   .parrafo3 {
-    width: 150px;
-    p{
-        text-align: justify;
-        font-size: 15px;
-        padding: 25px;
+    .main2 {
+        width: auto;
+
+
     }
-}
 
-    
+    .parrafo3 {
+        width: 150px;
+
+        p {
+            text-align: justify;
+            font-size: 15px;
+            padding: 25px;
+        }
+    }
 
 
-  
+
+
+
 
 
 }

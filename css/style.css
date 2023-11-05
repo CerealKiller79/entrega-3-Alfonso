@@ -39,7 +39,7 @@ header {
   justify-content: space-between;
   border: 1px solid grey;
   padding: 1rem;
-  height: 5rem;
+  height: 150px;
 }
 header .logo {
   display: flex;
@@ -57,7 +57,7 @@ header .navegable ul {
   margin: 0;
 }
 header .navegable ul li {
-  font-size: 0.8rem;
+  font-size: 1rem;
   display: flex;
   margin: 0.4rem;
   list-style: none;
@@ -166,6 +166,9 @@ header .navegable ul a {
   padding: 0;
   margin: 0;
 }
+.pie .derechos p {
+  font-size: 0.7rem;
+}
 .pie .insta {
   display: flex;
   align-items: center;
@@ -215,15 +218,21 @@ header .navegable ul a {
 }
 
 @media (max-width: 450px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
   .header .logo img {
-    width: 6rem;
+    display: none;
   }
   .header .navegable ul {
+    flex-direction: row;
     width: 100%;
     margin-top: 1px;
   }
   .header .navegable ul li {
-    font-size: 12px;
+    font-size: 14px;
   }
   .galeria {
     display: flex;
@@ -317,6 +326,74 @@ header .navegable ul a {
   font-family: "Russo One", sans-serif;
   font-weight: bold;
   font-size: 2rem;
+}
+
+.caja-videos {
+  margin-bottom: 150px;
+}
+.caja-videos .container {
+  height: auto;
+  margin-bottom: 50PX;
+  margin-top: 200px;
+}
+.caja-videos .container .my-4 {
+  font-size: 2rem;
+  text-align: center;
+}
+.caja-videos .container .card {
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.caja-videos .container .card-title {
+  text-align: center;
+  margin: 0;
+}
+.caja-videos .container .card-img-top {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.comments-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.comments-section .contenedor-formulario {
+  width: 50%;
+}
+.comments-section .contenedor-formulario form {
+  margin-bottom: 20px;
+}
+.comments-section .contenedor-formulario form label {
+  display: block;
+  margin-top: 10px;
+}
+.comments-section .contenedor-formulario form input,
+.comments-section .contenedor-formulario form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.comments-section .contenedor-formulario form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.comments-section .contenedor-formulario form button:hover {
+  background-color: #555;
+}
+.comments-section .contenedor-formulario #comment-list {
+  list-style: none;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
